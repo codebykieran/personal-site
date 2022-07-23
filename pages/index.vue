@@ -1,5 +1,5 @@
 <template>
-  
+  <index-hero></index-hero>
 </template>
 
 <script>
