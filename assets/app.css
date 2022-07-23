@@ -1,0 +1,12 @@
+.nav-link {
+    position: relative;
+}
+
+#navbar .nuxt-link-exact-active::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: solid 2px orange;
+}

@@ -1,11 +1,12 @@
 <template>
-    <nav class="relative mb-5">
-		<div class="flex items-center justify-between text-lg font-semibold">
-			<nuxt-link to="/"><span>&lt;codebykieran/&gt;</span></nuxt-link>
-			<ul class="hidden md:flex space-x-6">
-				<nuxt-link to="/about" class="">story</nuxt-link>
-				<nuxt-link to="/work" class="">work</nuxt-link>
-				<nuxt-link to="/contact" class="">contact</nuxt-link>
+    <nav class="relative pb-5 mb-5 border-b">
+		<div class="flex items-center justify-between text-lg">
+			<nuxt-link class="font-mono font-bold text-2xl" to="/"><span>&lt;codebykieran/&gt;</span></nuxt-link>
+			<ul id="navbar" class="hidden md:flex space-x-6">
+				<nuxt-link class="nav-link" to="/">home</nuxt-link>
+				<nuxt-link class="nav-link" to="/about">about</nuxt-link>
+				<nuxt-link class="nav-link" to="/work">work</nuxt-link>
+				<nuxt-link class="nav-link" to="/contact">contact</nuxt-link>
 			</ul>
 		</div>   
 	</nav>
@@ -17,6 +18,3 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
-</style>

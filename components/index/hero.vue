@@ -1,10 +1,27 @@
 <template>
     <div class="flex flex-col-reverse md:flex-row align-center justify-between">
-        <div class="flex flex-col space-y-6 align-center justify-center max-w-3xl">
-            <h1 class="text-6xl font-thin">Welcome,</h1>
-            <span class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur at omnis molestiae unde possimus labore excepturi tempora quaerat, perferendis ipsum porro blanditiis, voluptates dolorum, doloribus eius eos provident consequatur! Amet suscipit minus ab voluptatum temporibus eius tenetur doloremque possimus corporis, natus molestias aliquid placeat impedit, accusamus optio fuga vitae.</span>
-            <button class="rounded-full py-3 text-white bg-gray-800 w-1/3">Take a Look</button>
+        <div class="flex flex-col space-y-6 align-center justify-center md:w-9/12 lg:w-6/12">
+            <h1 class="font-mono text-4xl md:text-5xl lg:text-6xl font-light">Full-Stack Developer</h1>
+            <span class="text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti, facilis laborum dolor molestiae ratione ipsa. Natus ullam odit delectus tempore, veritatis enim, quisquam libero dolorum ad consequatur minus est, commodi sunt earum quia nulla porro officiis perspiciatis eligendi? Officia molestiae inventore qui distinctio? Praesentium id asperiores nulla pariatur dolorem neque aperiam ipsam, saepe accusamus odio reprehenderit quas eligendi?</span>
+            <button class="rounded-full py-3 text-white bg-gray-800 w-1/3 min-w-sm">Tell Me More</button>
         </div>
-        <img src="../../assets/svg/my-app.svg" class="max-w-full md:max-w-xl mx-auto md:mx-0 py-12">
+        <img src="../../assets/svg/my-app.svg" class="w-10/12 md:w-3/12 lg:w-5/12 mx-auto md:mx-0 py-12">
     </div>
 </template>
+
+<style scoped>
+
+h1::after {
+    content: '_';
+    margin-left: .5rem;
+    animation: 
+        blink-caret .5s step-end infinite;
+}
+
+/* The blinking cursor effect */
+@keyframes blink-caret {
+  from, to { color: transparent }
+  50% { color: orange }
+}
+
+</style>
