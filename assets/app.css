@@ -4,9 +4,21 @@
 
 #navbar .nuxt-link-exact-active::after {
     content: '';
-    width: 100%;
+    width: 20px;
     position: absolute;
+    margin: 0 auto;
     left: 0;
-    bottom: 0;
-    border-bottom: solid 2px orange;
+    right: 0;
+    bottom: -3px;
+    border-bottom: solid 3px orange;
+    
+}
+
+@keyframes blinking {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: orange;
+    }
 }
