@@ -3,9 +3,8 @@
 		<div class="flex flex-col md:flex-row items-center justify-between text-lg">
 			<nuxt-link class="font-mono font-bold text-2xl" to="/"><span>&lt;codebykieran/&gt;</span></nuxt-link>
 			<ul id="navbar" class="hidden md:flex space-x-6">
-				<nuxt-link class="nav-link" to="/">home</nuxt-link>
 				<nuxt-link class="nav-link" to="/about">about</nuxt-link>
-				<nuxt-link class="nav-link" to="/work">work</nuxt-link>
+				<nuxt-link class="nav-link" to="/work">services</nuxt-link>
 				<nuxt-link class="nav-link" to="/contact">contact</nuxt-link>
 			</ul>
 			<button id="menu-btn" :class="navOpen ? 'open' : ''" class="block hamburger mt-6 md:hidden focus:outline-none" @click="toggleNav">
@@ -15,9 +14,8 @@
 			</button>
 			<div class="md:hidden">
 				<div id="menu" :class="navOpen ? 'flex' : 'hidden'" class="absolute flex-col items-center border-2 border-yellow-600 self-end py-8 mt-10 space-y-6 font-semibold bg-white sm:w-auto sm:self-center left-0 right-0">
-					<nuxt-link class="nav-link" @click.native="toggleNav" to="/">home</nuxt-link>
-					<nuxt-link class="nav-link" @click.native="toggleNav" to="/about">about</nuxt-link>
-					<nuxt-link class="nav-link" @click.native="toggleNav" to="/work">work</nuxt-link>
+					<nuxt-link class="nav-link" @click.native="toggleNav" to="/about">story</nuxt-link>
+					<nuxt-link class="nav-link" @click.native="toggleNav" to="/work">services</nuxt-link>
 					<nuxt-link class="nav-link" @click.native="toggleNav" to="/contact">contact</nuxt-link>
 				</div>
 			</div>
@@ -37,7 +35,6 @@
 				this.navOpen = !this.navOpen
 			}
 		}
-        
     }
 </script>
 
@@ -87,6 +84,10 @@
 
 .open .hamburger-bottom {
 	transform: rotate(-45deg) translateY(6px) translate(-6px); 
+}
+
+#menu {
+	background: rgba(255, 255, 255, .95);
 }
 
 
